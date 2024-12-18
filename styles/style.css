@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --background-color: #F5F5F5;
+    --card: #FFFFFF;
+    --accent: #9FA324;
+    --color-black: #04091E;
+    --color-light: #747681;
+    --font: 'Urbanist', sans-serif;
+}
+
+.body{
+    color: var(--color-black);
+    font-family: var(--font);
+}
+
+.dashboard{
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat((3, auto));
+    row-gap: 36px;
+    column-gap: 25px;
+    padding: 34px 50px 34px 44px;
+}
+
+.dashboard__block{
+    grid-column: span 1;
+    padding: 24px 21px 30px 31px;
+    background-color: var(--card);
+}
+
+.dashboard__block--wide{
+    grid-column: span 2;
+}
+
+.dashboard__block__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard__block__header__title{
+    font-weight: 600;
+    font-size: 16px;
+    font-family: var(--font);
+    line-height: 160%;
+}
+
+.dashboard__block__content{
+    margin-top: 29px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 70px;
+}
+
+.dashboard__block__content__value{
+    font-family: var(--font);
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 125%;
+}
+
+.dashboard__block__content__change{
+    font-family: var(--font);
+    font-size: 13px;
+    line-height: 160%;
+    color: var(--color-light);
+}
+
+.dashboard__block__content__plot{
+    flex: 0 0 100%;
+    margin-left: auto;
+}
